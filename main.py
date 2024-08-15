@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 from scene_base import Scene_base
 from title_scene import Title_scene
+from game_scene import Game_scene
 
 width, height = (1150, 800)
         
@@ -43,4 +44,4 @@ def run_game(width, height, fps, starting_scene):
         clock.tick(fps)
         
 if __name__ == '__main__':
-    run_game(width, height, 60, Title_scene())
+    run_game(width, height, 60, Title_scene(width, height))
