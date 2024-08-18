@@ -14,6 +14,7 @@ class Title_scene(Scene_base):
         self.items.append(Text("THREE-BODY PONG", (width//2, height//3), height//10))
         self.items.append(Text("Press ENTER to continue", (width//2, height//2), height//20))
         self.items.append(Text("Press ESC to exit", (width//2, height//2+height//10), height//20))
+        self.items.append(Text("W = Up, S = Down, Space = Anti-gravity attack", (width//2, height//5 * 4), 30))
         
     def Process_input(self, events, pressed_keys):
         for event in events:
